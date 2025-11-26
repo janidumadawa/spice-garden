@@ -72,7 +72,7 @@ export default function NavBar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Spice Garden
+                            Spice Garden
             </motion.a>
 
             {/* Desktop Navigation */}

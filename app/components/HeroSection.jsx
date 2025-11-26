@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 export default function HeroSection() {
@@ -60,7 +61,7 @@ export default function HeroSection() {
           <div className="w-[450px] h-0.5 bg-[#D4AF37] rounded-full mx-auto"/>
 
         </motion.div>
-
+      <Link href="/menu">
         <motion.button
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -71,6 +72,7 @@ export default function HeroSection() {
         >
           Explore Our Menu
         </motion.button>
+      </Link>
       </motion.div>
 
       {/* Scroll Indicator */}

@@ -98,7 +98,9 @@ export function Footer() {
                 href: '#',
               },
             ].map((social, index) => (
-              <a className="w-12 h-12 bg-[#D4AF37]/20 rounded-full flex items-center justify-center hover:bg-[#D4AF37] transition-colors duration-300">
+              <a 
+              key={social.label}
+              className="w-12 h-12 bg-[#D4AF37]/20 rounded-full flex items-center justify-center hover:bg-[#D4AF37] transition-colors duration-300">
                 <social.icon className="w-5 h-5" />
               </a>
             ))}

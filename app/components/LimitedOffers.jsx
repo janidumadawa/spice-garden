@@ -44,11 +44,10 @@ function CountdownTimer() {
   )
 }
 
-// Card Component
+// Card Component - FIXED: Changed div to motion.div
 function SpecialCard({ special, index }) {
-
   return (
-    <div
+    <motion.div // ✅ Changed from div to motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -94,7 +93,7 @@ function SpecialCard({ special, index }) {
           Order Now
         </button>
       </div>
-    </div>
+    </motion.div> // ✅ Changed from div to motion.div
   )
 }
 
@@ -103,7 +102,7 @@ export default function LimitedOffers() {
   const specials = [
     {
       id: '1',
-      image: './images/foods/rice&curry1.jpg    ',
+      image: './images/foods/rice&curry1.jpg',
       title: 'Executive Lunch Combo',
       description: 'Rice with 3 curries, papadum, and fresh sambol + King Coconut drink',
       originalPrice: 'LKR 1,500',
@@ -113,7 +112,7 @@ export default function LimitedOffers() {
       id: '2',
       image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=2070&auto=format&fit=crop',
       title: 'Aloo Samosa',
-      description: '10 Aloo Samosa  Samosa Stuffed With Spiced Potato and Peas',
+      description: '10 Aloo Samosa Samosa Stuffed With Spiced Potato and Peas',
       price: 'LKR 800',
     },
     {
